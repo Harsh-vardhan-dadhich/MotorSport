@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/window_background">
+
+    <com.app.inn.peepsin.UI.helpers.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_above="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        app:tabIndicatorHeight="@dimen/zero"
+        android:padding="1dp"
+        android:background="@drawable/canvas_tab_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"/>
+
+    <!-- Progress bar overlay; shown while login is in progress -->
+    <include layout="@layout/progess_overlay_layout"/>
+
+    <!-- overlay; shown while network is not connected -->
+    <include layout="@layout/overlay_connectivity_layout"/>
+
+</RelativeLayout>
