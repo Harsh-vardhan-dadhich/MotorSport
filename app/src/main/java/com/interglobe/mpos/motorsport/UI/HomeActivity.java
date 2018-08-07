@@ -1,11 +1,13 @@
-package com.interglobe.mpos.motorsport;
+package com.interglobe.mpos.motorsport.UI;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
+import com.interglobe.mpos.motorsport.R;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -16,13 +18,9 @@ public class HomeActivity  extends AppCompatActivity implements TabLayout.OnTabS
 
 
 
-    @BindView(R.id.view_pager) CustomViewPager viewPager;
+
     @BindView(R.id.tabs) TabLayout tabLayout;
-    @BindView(R.id.progress_overlay)
-    View progressOverlay;
-    @BindView(R.id.overlay_connectivity)
-    View overlayConnectivity;
-    SectionsPagerAdapter sectionsPagerAdapter;
+
 
 
     @Override
