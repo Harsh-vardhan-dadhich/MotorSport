@@ -8,12 +8,16 @@ public interface Constant {
 
 
 
+    String kAppPreferences = "MotorSportInPreferences";
     String kEmptyString = "";
+    Number kEmptyNumber = 0;
     String kMessage = "message";
     String kStatus = "status";
     String kMessageInternalInconsistency = "Some internal inconsistency occurred. Please try again.";
     String kMessageServerNotRespondingError = "PeepsIn server not responding!";
     String kSocketTimeOut = "PeepsIn Server not responding..";
+    String kDefaultAppName = "MotorSport";
+
 
 
 
